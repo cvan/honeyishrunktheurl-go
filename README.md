@@ -2,6 +2,8 @@
 
 World's tiniest URL shortener. Written in Go.
 
+Want to add a site? [Update `sites.json`.](https://github.com/cvan/honeyishrunktheurl-go/edit/master/sites.json)
+
 
 ## Dependencies
 
@@ -39,6 +41,8 @@ I use [autoenv](https://github.com/kennethreitz/autoenv) for managing environmen
 
 
 ## Usage
+
+Want to add a site? [Update `sites.json`.](https://github.com/cvan/honeyishrunktheurl-go/edit/master/sites.json)
 
 To build the server:
 
