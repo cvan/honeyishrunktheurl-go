@@ -19,7 +19,7 @@ func main() {
 
     log.Printf("Server running at 0.0.0.0:" + port)
 
-    log.Fatal(http.ListenAndServe(":"+port, nil))
+    log.Fatal(http.ListenAndServe(":" + port, nil))
 }
 
 func Redirect(w http.ResponseWriter, r *http.Request) {
