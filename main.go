@@ -37,7 +37,7 @@ func Redirect(w http.ResponseWriter, r *http.Request) {
         log.Fatalln(err)
     }
 
-    key := r.URL.Path[1:] // Strip the slash from the short URL.
+    key := r.URL.Path[1:]  // Strip the slash from the short URL.
 
     // Look up the destination from the short URL.
     destValue := sites.Get(key).MustString()
@@ -59,7 +59,7 @@ func Redirect(w http.ResponseWriter, r *http.Request) {
     }
 
     // Parse the short URL so we can extract its query-string parameters.
-    shortUrl, err := url.Parse(r.URL.String()) // Parse `/<key>`.
+    shortUrl, err := url.Parse(r.URL.String())  // Parse `/<key>`.
     if err != nil {
         log.Fatal(err)
     }
