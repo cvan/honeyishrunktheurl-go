@@ -58,3 +58,8 @@ Then fire up your browser to one of the short URL patterns specified in the `sit
 To run the server on a different port:
 
     PORT=8000 ./server.o
+
+
+## Credits
+
+* @potch for the idea
